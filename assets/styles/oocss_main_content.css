@@ -1,0 +1,114 @@
+:root{
+    /* CSS HEX */
+    --oxford-blue: #061a40ff;
+    --giants-orange: #f26430ff;
+    --moonstone: #009fb7ff;
+    --sapphire: #0353a4ff;
+    --prussian-blue: #003559ff;
+    --branco: #ffffffff;
+    --preto: #000000ff;
+    --transparente: #ffffff00;
+    --fonte-titulos: 'Metamorphous';
+    --fonte-corpo: 'Nunito';
+    --fonte-nadave: 'Hanalei Fill';
+}
+
+/* ------------------- Conteúdo Principal --------------------- */
+
+.lista-conteudo {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 1vh 1vw;
+}
+
+.texto-citacao {
+    font-style: italic;
+}
+
+.texto-citacao::before {
+    content: "\"";
+}
+
+.texto-citacao::after {
+    content: "\"";
+}
+
+.citacao-autor {
+    margin-bottom: 2vh;
+    text-align: right;
+}
+
+.secao_destaque {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    h4 {
+        max-width: 40%;
+    }
+}
+
+.texto-destaque {
+    font-family: var(--fonte-nadave);
+    color: var(--branco);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--moonstone), 3px 3px 4px var(--giants-orange);
+}
+
+.botao-destaque {
+    padding: 2vh 3vmin;
+    color: var(--branco);
+    background-color: var(--moonstone);
+}
+
+.botao-destaque:hover, .botao-destaque:active{
+    background-color: var(--sapphire);
+    box-shadow: 2px 2px 3px var(--preto);
+    color: var(--giants-orange);
+}
+
+/* ------- Ilustrações e imagens de conteúdo -------- */
+
+.box-conteudo-imagem {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+div.ilustracao {
+    margin: 0 3vmin;
+    min-height: 100px;
+    max-width: 150px;
+    min-width: 100px;
+    width: 30%;
+}
+
+.imagem-texto-I {
+    background-image: url(../imgs/progamador_100.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagem-texto-II {
+    background-image: url(../imgs/computador_80.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagem-texto-III {
+    background-image: url(../imgs/grafico_100.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imagem-texto-IV {
+    background-image: url(../imgs/raquer_100.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -----------------------------------imagensconteudos */
+
+/* ----------------------------------------- conteudoprincipal */

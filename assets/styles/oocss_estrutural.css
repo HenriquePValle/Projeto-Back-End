@@ -1,0 +1,327 @@
+:root{
+    /* CSS HEX */
+    --oxford-blue: #061a40ff;
+    --giants-orange: #f26430ff;
+    --moonstone: #009fb7ff;
+    --sapphire: #0353a4ff;
+    --prussian-blue: #003559ff;
+    --branco: #ffffffff;
+    --preto: #000000ff;
+    --transparente: #ffffff00;
+    --fonte-titulos: 'Metamorphous';
+    --fonte-corpo: 'Nunito';
+    --fonte-nadave: 'Hanalei Fill';
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+main {
+    flex-grow: 2;
+}
+
+/* -------------- Cabeçalho ------------ */
+
+.cabecalho {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 2vw;
+    background-image: linear-gradient(to bottom, var(--preto), var(--oxford-blue));
+    color: var(--branco);
+}
+
+.logo{
+    display: inline-flex;
+    align-items: center;
+    max-width: 180px;
+    width: 35%;
+    color: var(--branco);
+}
+
+.logo-img {
+    min-width: 50px;
+    max-width: 80px;
+    height: auto;
+}
+
+.texto-titulo-site {
+    font-family: var(--fonte-titulos);
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--oxford-blue), 3px 3px 5px var(--moonstone);
+}
+
+/* ------------ Pesquisa ----------- */
+.formulario-pesquisa {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.container-pesquisa {
+    display: none;
+    margin: 1vh auto;
+    border: 0.4px solid black;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.campo-pesquisa{
+    margin: 0;
+    padding: 1vh 1vw;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.icone-pesquisa{
+    background-color: var(--transparente);
+    background-image: url(../imgs/magnifying-glass-40-preto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.botao-pesquisa {
+    background-color: var(--transparente);
+    background-image: url(../imgs/magnifying-glass-40.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 5px;
+    width: 44px;
+    height: 44px;
+    transition: background-color 200ms, box-shadow 150ms;
+}
+
+.botao-pesquisa:hover {
+    background-color: var(--prussian-blue);
+    box-shadow: 2px 2px 5px var(--moonstone);
+    transition: all 500ms;
+}
+
+/* ------------------------- pesquisa */
+
+#botao-menu {
+    border-radius: 5px;
+    transition: background-color 200ms, box-shadow 150ms;
+}
+
+#botao-menu:hover {
+    box-shadow: 3px 3px 5px var(--moonstone);
+    transition: all 500ms;
+}
+
+/* --------------------------------- cabecalho */
+
+/* ----------------- Menu -------------------- */
+
+.container-menu {
+    display: none;
+    width: 100%;
+    background-color: var(--moonstone);
+    padding-bottom: 1vh;
+}
+
+.container-menu > .lista-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-menu {
+    border-bottom: 3px solid var(--oxford-blue);
+}
+
+.texto-menu {
+    font-family: var(--fonte-titulos);
+    font-size: 1.0em;
+    line-height: 1.3em;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px 4px var(--oxford-blue), 3px 3px 5px var(--moonstone);
+}
+
+.link-item-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    padding: 1vh 5vw;
+    color: var(--branco);
+    background-color: var(--moonstone);
+}
+
+.link-item-menu:hover, .link-item-menu:active {
+    background-color: var(--sapphire);
+    box-shadow: 2px 2px 3px var(--preto);
+    .p-link-item-menu {
+        color: var(--giants-orange);
+    }
+}
+
+.p-link-item-menu {
+    margin-left: 1vw;
+}
+
+/* ------------- Icones --------------- */
+.menu-icones {
+    height: 30px;
+    width: 30px;
+    margin: auto 5px;
+}
+
+.icone-blog {
+    background-image: url(../imgs/blog-30.png);
+}
+
+.icone-cursos {
+    background-image: url(../imgs/cursos-30.png);
+}
+
+.icone-cadastrar {
+    background-image: url(../imgs/inscrever-30.png);
+}
+
+.icone-entrar {
+    background-image: url(../imgs/importar-32.png);
+}
+
+.icone-oculto {
+    background-image: url(../imgs/lucifer-sigil-30.png);
+}
+/* --------------------------------- icones  */
+
+#actual-page {
+    background-color: var(--sapphire);
+}
+
+/* ----------------------------------------- menu */
+
+/* --------------- Rodapé ------------------- */
+.rodape {
+    width: 100%;
+    padding: 2vh 1vw 1vh;
+    border-top: 2px solid var(--preto);
+    background-image: linear-gradient(to bottom, var(--oxford-blue), var(--preto));
+    display: grid;
+    grid-template-columns: 12% 75% 12%;
+    row-gap: 1%;
+    align-items: center;
+}
+
+.link-rodape {
+    display: block;
+    grid-row: 1 / span 2;
+    justify-self: center;
+    background-image: url(../imgs/caixao_48.png);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.texto-rodape {
+    font-family: var(--fonte-corpo);
+    font-size: 0.8em;
+    line-height: 1.1em;
+    text-align: center;
+    color: var(--branco);
+}
+
+.texto-rodape::before {
+    content: "\26FC  ";
+    font-size: 1.2em;
+}
+
+.texto-rodape::after {
+    content: "  \26FE";
+    font-size: 1.2em;
+}
+
+.texto-rodape-peq {
+    font-family: var(--fonte-corpo);
+    font-size: 0.7em;
+    line-height: 1.1em;
+    text-align: right;
+    color: var(--branco);
+    grid-column: 2 / span 2;
+    align-self: flex-end;
+}
+/* ----------------------------------- rodape */
+
+/* ------------------- Conteúdo Principal --------------------- */
+.container-principal {
+    padding: 1vh 2vw;
+    background-image: linear-gradient(to bottom, var(--oxford-blue), var(--prussian-blue), var(--sapphire), var(--moonstone), var(--sapphire), var(--prussian-blue), var(--oxford-blue));
+}
+
+.conteudo {
+    margin: 1vh auto;
+    width: 98%;
+    color: var(--branco);
+}
+
+.titulo-conteudo {
+    font-family: var(--fonte-titulos);
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px var(--giants-orange);
+    color: var(--branco);
+    padding: 1vmin 1vw;
+    width: 100%;
+}
+
+.secao-conteudo {
+    margin-bottom: 1vh;
+    padding: 1vh 3vw;
+}
+
+.titulo-secao {
+    font-family: var(--fonte-nadave);
+    color: var(--branco);
+    font-size: 1.1em;
+    line-height: 1.4em;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--preto);
+    margin: 2vh 1vw 1vh;
+}
+
+.texto-conteudo {
+    font-family: var(--fonte-corpo);
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: justify;
+    text-indent: 5%;
+    color: var(--branco);
+    margin: 0 3vw;
+}
+
+/* ----------------------------------------- conteudoprincipal */

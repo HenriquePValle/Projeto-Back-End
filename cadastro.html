@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topogigio | Assinar</title>
+    <link rel="shortcut icon" href="assets/imgs/logo_transparent_background.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/fontes.css">
+    <link rel="stylesheet" href="assets/styles/oocss_estrutural.css">
+    <link rel="stylesheet" href="assets/styles/oocss_formulario.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a class="logo" href="index.html">
+            <img class="logo-img" src="assets/imgs/logo.png" alt="Logo do site.">
+            <h1 class="texto-titulo-site">Topogigio das Interwebs</h1>
+        </a>
+        <form class="formulario-pesquisa" action="" method="get">
+            <div class="container-pesquisa">
+                <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
+                <button class="icone-pesquisa" type="button"></button>
+            </div>
+            <button class="botao-pesquisa" type="button"></button>
+        </form>
+        <img id="botao-menu" class="menu-icones" src="assets/imgs/icone-menu-40.png" alt="Icone do Menu.">
+    </header>
+    <nav class="container-menu">
+        <ul class="lista-menu">
+            <li class="item-menu">
+                <a class="link-item-menu texto-menu"  href="index.html">
+                    <div class="menu-icones icone-blog"></div>
+                    <p class="p-link-item-menu">Blog</p>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a class="link-item-menu texto-menu" href="">
+                    <div class="menu-icones icone-cursos"></div>
+                    <p class="p-link-item-menu">Cursos</p>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a class="link-item-menu texto-menu" id="actual-page" href="cadastro.html">
+                    <div class="menu-icones icone-cadastrar"></div>
+                    <p class="p-link-item-menu">Cadastre-se</p>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a class="link-item-menu texto-menu" href="entrar.html">
+                   <div class="menu-icones icone-entrar"></div>
+                    <p class="p-link-item-menu">Entre</p>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a class="link-item-menu texto-menu" href="">
+                    <div class="menu-icones icone-oculto"></div>
+                    <p class="p-link-item-menu">--&#x26e7;--</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+   <main class="container-principal">
+        <article class="conteudo">
+            <h2 class="titulo-conteudo">Cadastre-se</h2>
+            <section class="secao-conteudo">
+                <h2 class="titulo-secao">Criar Conta</h2>
+                <form class="formulario-cadastro" action="user/cadastro.php" onsubmit="" method="post">
+                                        
+                    <div class="campo-formulario">
+                        <label for="nome_usuario">Nome de Usuário</label>
+                        <input type="text" name="nome_usuario" id="nome_usuario" required placeholder="Nome do Usuário">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email_usuario">E-mail</label>
+                        <input type="email" name="email_usuario" id="email_usuario" required placeholder="email@email.com">
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="senha_usuario">Senha</label>
+                        <input type="password" name="senha_usuario" id="senha_usuario" required placeholder="********">
+                    </div>
+                    
+                    <div class="campo-formulario">
+                        <label for="senha_usuario_confirmacao">Confirme a Senha</label>
+                        <input type="password" name="senha_usuario_confirmacao" id="senha_usuario_confirmacao" required placeholder="********">
+                    </div>
+                    
+                    <button type="submit" id="botao_form-cadastro">Cadastrar</button>
+                </form>
+    
+            </section>
+            
+        </article>
+   </main>
+
+   <footer class="rodape">
+        <a class="link-rodape" href=""></a>
+        <p class="texto-rodape">Web Site developed by Manoteiro</p>
+        <p class="texto-rodape-peq">Cursando bem para cursar sempre!</p>
+   </footer>
+
+</body>
+</html>

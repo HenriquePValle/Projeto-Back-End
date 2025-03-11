@@ -1,0 +1,33 @@
+:root{
+    /* CSS HEX */
+    --oxford-blue: #061a40ff;
+    --giants-orange: #f26430ff;
+    --moonstone: #009fb7ff;
+    --sapphire: #0353a4ff;
+    --prussian-blue: #003559ff;
+    --branco: #ffffffff;
+    --preto: #000000ff;
+    --transparente: #ffffff00;
+    --fonte-titulos: 'Metamorphous';
+    --fonte-corpo: 'Nunito';
+    --fonte-nadave: 'Hanalei Fill';
+}
+
+
+/* -------------- Formulário ---------------- */
+
+.formulario-cadastro {
+    display: block;
+    width: 90%;
+    margin: 1vh auto;
+    font-family: var(--fonte-corpo);
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh auto;
+    width: 90%;
+}
+
+/* ------------------------------- furmulario */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topogigio dos Cursos</title>
+    <link rel="shortcut icon" href="assets/imgs/logo_transparent_background.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/fontes.css">
+    <link rel="stylesheet" href="assets/styles/estrutura.css">
+    <link rel="stylesheet" href="assets/styles/cadastro.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <a class="cabecalho-logo" href="index.html">
+            <img class="logo-imagem" src="assets/imgs/logo.png" alt="Logo da Plataforma">
+            <h1 class="logo-titulo">Topogigio dos Cursos</h1>
+        </a>
+        <nav class="container-menu">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Blog</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="">Cursos</a>
+                </li>
+                <li class="menu-item botao_cadastro">
+                    <a class="menu-link"  href="cadastro.html">Cadastrar</a>
+                </li>
+                <li class="menu-item" id="botao_entrar">
+                    <a class="menu-link"  href="entrar.html">Entrar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cadastro">
+            <h2 class="secao-titulo">Acessar Conta</h2>
+            <form class="formulario form-entrar" action="user/login.php" method="post">
+                <label for="email_usuario">E-mail:</label>
+                <input type="email" name="email_usuario" id="email_usuario" required placeholder="email@email.com">
+                <label for="senha_usuario">Senha:</label>
+                <input type="password" name="senha_usuario" id="senha_usuario" required>
+                <button type="submit" id="botao_form-entrar">Log In</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="container-rodape">
+        <h3 class="rodape-imagem">&#x26B0;</h3>
+        <p class="rodape-creditos">&#x26FC; Web Site construído por Manoteiro &#x26FE;</p>
+        <p class="rodape-moto">Cursando bem para cursar sempre!</p>
+    </footer>
+</body>
+</html>

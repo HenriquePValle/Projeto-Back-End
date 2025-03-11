@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Metamorphous';
+    src: url('/assets/styles/fonts/Metamorphous-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('/assets/styles/fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hanalei Fill';
+    src: url('/assets/styles/fonts/HanaleiFill-Regular.ttf') format('truetype');
+}
