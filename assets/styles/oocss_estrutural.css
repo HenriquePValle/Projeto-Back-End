@@ -144,7 +144,6 @@ main {
 /* ----------------- Menu -------------------- */
 
 .container-menu {
-    display: none;
     width: 100%;
     background-color: var(--moonstone);
     padding-bottom: 1vh;

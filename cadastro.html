@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="assets/styles/fontes.css">
     <link rel="stylesheet" href="assets/styles/oocss_estrutural.css">
     <link rel="stylesheet" href="assets/styles/oocss_formulario.css">
+    <script src="assets/scripts/main.js"></script>
 </head>
-<body>
+<body onload="inicio()">
     <header class="cabecalho">
         <a class="logo" href="index.html">
             <img class="logo-img" src="assets/imgs/logo.png" alt="Logo do site.">
@@ -25,7 +26,7 @@
         </form>
         <img id="botao-menu" class="menu-icones" src="assets/imgs/icone-menu-40.png" alt="Icone do Menu.">
     </header>
-    <nav class="container-menu">
+    <nav class="container-menu" id="menu">
         <ul class="lista-menu">
             <li class="item-menu">
                 <a class="link-item-menu texto-menu"  href="index.html">
@@ -65,7 +66,7 @@
             <h2 class="titulo-conteudo">Cadastre-se</h2>
             <section class="secao-conteudo">
                 <h2 class="titulo-secao">Criar Conta</h2>
-                <form class="formulario-cadastro" action="user/cadastro.php" onsubmit="" method="post">
+                <form class="formulario-info-user" action="user/cadastro.php" onsubmit="" method="post">
                                         
                     <div class="campo-formulario">
                         <label for="nome_usuario">Nome de Usuário</label>
@@ -87,7 +88,7 @@
                         <input type="password" name="senha_usuario_confirmacao" id="senha_usuario_confirmacao" required placeholder="********">
                     </div>
                     
-                    <button type="submit" id="botao_form-cadastro">Cadastrar</button>
+                    <button class="botao-formulario" type="submit" id="botao_form-cadastro">Cadastrar</button>
                 </form>
     
             </section>

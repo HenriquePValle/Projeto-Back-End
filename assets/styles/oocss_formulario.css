@@ -16,11 +16,12 @@
 
 /* -------------- Formulário ---------------- */
 
-.formulario-cadastro {
+.formulario-info-user {
     display: block;
     width: 90%;
     margin: 1vh auto;
     font-family: var(--fonte-corpo);
+    font-size: 1em;
 }
 
 .campo-formulario {
@@ -28,6 +29,38 @@
     flex-direction: column;
     margin: 3vh auto;
     width: 90%;
+}
+
+.campo-formulario > label {
+    margin-left: 6vw;
+    font-size: 0.9em;
+}
+
+.campo-formulario > input {
+    font-size: 1em;
+    padding: 3% 5%;
+    border-radius: 20px;
+    margin: 1vh 2vw;
+    border: 1px solid var(--oxford-blue);
+}
+
+.botao-formulario {
+    display: block;
+    margin: 1vh auto;
+    padding: 1vmax 5vmax;
+    font-family: var(--fonte-nadave);
+    font-size: 1.3em;
+    border: none;
+    border-radius: 20px;
+    color: var(--branco);
+    background: var(--moonstone);
+    transition: all 0.5s;
+}
+
+.botao-formulario:hover, .botao-formulario:active {
+    color: var(--giants-orange);
+    background-color: var(--sapphire);
+    box-shadow: 2px 2px 3px var(--oxford-blue);
 }
 
 /* ------------------------------- furmulario */
