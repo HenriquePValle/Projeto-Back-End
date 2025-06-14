@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/styles/oocss_estrutural.css">
     <link rel="stylesheet" href="assets/styles/oocss_formulario.css">
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/forms.js"></script>
 </head>
 <body onload="inicio()">
     <header class="cabecalho">
@@ -18,10 +19,7 @@
             <h1 class="texto-titulo-site">Topogigio das Interwebs</h1>
         </a>
         <form class="formulario-pesquisa" action="" method="get">
-            <div class="container-pesquisa">
-                <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
-                <button class="icone-pesquisa" type="button"></button>
-            </div>
+            <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
             <button class="botao-pesquisa" type="button"></button>
         </form>
         <img id="botao-menu" class="menu-icones" src="assets/imgs/icone-menu-40.png" alt="Icone do Menu.">
@@ -66,26 +64,31 @@
             <h2 class="titulo-conteudo">Cadastre-se</h2>
             <section class="secao-conteudo">
                 <h2 class="titulo-secao">Criar Conta</h2>
-                <form class="formulario-info-user" action="user/cadastro.php" onsubmit="" method="post">
+                <form class="formulario-info-user" action="user/cadastro.php" onsubmit="return validarDados()" method="post" autocomplete="off">
                                         
                     <div class="campo-formulario">
                         <label for="nome_usuario">Nome de Usuário</label>
-                        <input type="text" name="nome_usuario" id="nome_usuario" required placeholder="Nome do Usuário">
+                        <input type="text" name="nome_usuario" id="nome_usuario" required placeholder="Nome do Usuário" oninput="validarNome()">
+                        <span class="formulario_erro" id="erro_nome"></span>
                     </div>
 
                     <div class="campo-formulario">
                         <label for="email_usuario">E-mail</label>
-                        <input type="email" name="email_usuario" id="email_usuario" required placeholder="email@email.com">
+                        <input type="email" name="email_usuario" id="email_usuario" required placeholder="email@email.com" oninput="validarEmail()">
+                        <span class="formulario_erro" id="erro_email"></span>
                     </div>
                     
                     <div class="campo-formulario">
                         <label for="senha_usuario">Senha</label>
-                        <input type="password" name="senha_usuario" id="senha_usuario" required placeholder="********">
+                        <input type="password" name="senha_usuario" id="senha_usuario" required placeholder="********"
+                        oninput="validarSenhaDetalhada()">
+                        <span class="formulario_erro" id="erro_senha"></span>
                     </div>
                     
                     <div class="campo-formulario">
                         <label for="senha_usuario_confirmacao">Confirme a Senha</label>
-                        <input type="password" name="senha_usuario_confirmacao" id="senha_usuario_confirmacao" required placeholder="********">
+                        <input type="password" name="senha_usuario_confirmacao" id="senha_usuario_confirmacao" required placeholder="********" oninput="validarConfirmacaoSenha()">
+                        <span class="formulario_erro" id="erro_senha_confirmacao"></span>
                     </div>
                     
                     <button class="botao-formulario" type="submit" id="botao_form-cadastro">Cadastrar</button>

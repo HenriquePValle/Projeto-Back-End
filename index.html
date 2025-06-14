@@ -6,9 +6,7 @@
     <title>Topogigio</title>
     <link rel="shortcut icon" href="assets/imgs/logo_transparent_background.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/reset.css">
-    <link rel="stylesheet" href="assets/styles/fontes.css">
-    <link rel="stylesheet" href="assets/styles/oocss_estrutural.css">
-    <link rel="stylesheet" href="assets/styles/oocss_main_content.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
     <script src="assets/scripts/main.js"></script>
 </head>
 <body onload="inicio()">
@@ -18,42 +16,39 @@
             <h1 class="texto-titulo-site">Topogigio das Interwebs</h1>
         </a>
         <form class="formulario-pesquisa" action="" method="get">
-            <div class="container-pesquisa">
-                <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
-                <button class="icone-pesquisa" type="button"></button>
-            </div>
+            <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
             <button class="botao-pesquisa" type="button"></button>
         </form>
-        <img id="botao-menu" class="menu-icones" src="assets/imgs/icone-menu-40.png" alt="Icone do Menu.">
+        <span class="menu-icones" id="botao-menu"></span>
     </header>
     <nav class="container-menu" id="menu">
         <ul class="lista-menu">
             <li class="item-menu">
-                <a class="link-item-menu texto-menu" id="actual-page" href="index.html">
+                <a class="link-item-menu" id="actual-page" href="index.html">
                     <div class="menu-icones icone-blog"></div>
                     <p class="p-link-item-menu">Blog</p>
                 </a>
             </li>
             <li class="item-menu">
-                <a class="link-item-menu texto-menu" href="">
+                <a class="link-item-menu" href="">
                     <div class="menu-icones icone-cursos"></div>
                     <p class="p-link-item-menu">Cursos</p>
                 </a>
             </li>
             <li class="item-menu">
-                <a class="link-item-menu texto-menu" href="cadastro.html">
+                <a class="link-item-menu" href="cadastro.html">
                     <div class="menu-icones icone-cadastrar"></div>
                     <p class="p-link-item-menu">Cadastre-se</p>
                 </a>
             </li>
             <li class="item-menu">
-                <a class="link-item-menu texto-menu" href="entrar.html">
+                <a class="link-item-menu" href="entrar.html">
                    <div class="menu-icones icone-entrar"></div>
                     <p class="p-link-item-menu">Entre</p>
                 </a>
             </li>
             <li class="item-menu">
-                <a class="link-item-menu texto-menu" href="">
+                <a class="link-item-menu" href="">
                     <div class="menu-icones icone-oculto"></div>
                     <p class="p-link-item-menu">--&#x26e7;--</p>
                 </a>
@@ -61,7 +56,7 @@
         </ul>
     </nav>
 
-   <main class="container-principal">
+    <main class="container-principal">
         <article class="conteudo">
             <h2 class="titulo-conteudo">Aprenda Programação do Zero ao Negativo</h2>
             <section class="secao-conteudo box-conteudo-imagem">
@@ -113,10 +108,10 @@
             </section>
             <section class="secao-conteudo secao_destaque">
                 <h4 class="texto-destaque">Venha desaprender agora mesmo!!!</h4>
-                <a class="texto-destaque botao-destaque" href="">Assinar Agora</a>
+                <a class="texto-destaque botao-destaque" href="cadastro.html">Assinar Agora</a>
             </section>
         </article>
-   </main>
+    </main>
 
    <footer class="rodape">
         <a class="link-rodape" href=""></a>

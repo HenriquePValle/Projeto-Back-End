@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/styles/oocss_estrutural.css">
     <link rel="stylesheet" href="assets/styles/oocss_formulario.css">
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/forms.js"></script>
 </head>
 <body onload="inicio()">
     <header class="cabecalho">
@@ -18,10 +19,7 @@
             <h1 class="texto-titulo-site">Topogigio das Interwebs</h1>
         </a>
         <form class="formulario-pesquisa" action="" method="get">
-            <div class="container-pesquisa">
-                <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
-                <button class="icone-pesquisa" type="button"></button>
-            </div>
+            <input type="search" name="campo-pesquisa" id="campo-pesquisa" class="campo-pesquisa" placeholder="Pesquisar">
             <button class="botao-pesquisa" type="button"></button>
         </form>
         <img id="botao-menu" class="menu-icones" src="assets/imgs/icone-menu-40.png" alt="Icone do Menu.">
@@ -65,11 +63,11 @@
         <article class="conteudo">
             <h2 class="titulo-conteudo">Acessar Conta</h2>
             <section class="secao-conteudo">
-                <form class="formulario-info-user" action="user/login.php" onsubmit="" method="post">
+                <form class="formulario-info-user" action="user/login.php" onsubmit="validarDadosEntrar()" method="post">
                     
                     <div class="campo-formulario">
                         <label for="email_usuario">E-mail:</label>
-                        <input type="email" name="email_usuario" id="email_usuario" required placeholder="email@email.com">
+                        <input type="email" name="email_usuario" id="email_usuario" required placeholder="email@email.com" oninput="validarEmail()">
                     </div>
 
                     <div class="campo-formulario">
